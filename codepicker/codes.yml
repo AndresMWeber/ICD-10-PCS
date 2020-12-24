@@ -1,0 +1,199 @@
+operations:
+  00: Central Nervous System and Cranial Nerves
+  01: Peripheral Nervous System
+  02: Heart and Great Vessels
+  03: Upper Arteries
+  04: Lower Arteries
+  05: Upper Veins
+  06: Lower Veins
+  07: Lymphatic and Hemic Systems
+  08: Eye
+  09: Ear, Nose, Sinus
+  0B: Respiratory System
+  0C: Mouth and Throat
+  0D: Gastrointestinal System
+  0F: Hepatobiliary System and Pancreas
+  0G: Endocrine System
+  0H: Skin and Breast
+  0J: Subcutaneous Tissue and Fascia
+  0K: Muscles
+  0L: Tendons
+  0M: Bursae and Ligaments
+  0N: Head and Facial Bones
+  0P: Upper Bones
+  0Q: Lower Bones
+  0R: Upper Joints
+  0S: Lower Joints
+  0T: Urinary System
+  0U: Female Reproductive System
+  0V: Male Reproductive System
+  0W: Anatomical Regions, General
+  0X: Anatomical Regions, Upper Extremities
+  0Y: Anatomical Regions, Lower Extremities
+
+obstetrics:
+  10: Pregnancy
+
+placement:
+  2W: Anatomical Regions
+  2Y: Anatomical Orifices
+
+administration:
+  30: Circulatory
+  3C: Indwelling Device
+  3E: Physiological Systems and Anatomical Regions
+
+measurement_and_monitoring:
+  4A: Physiological Systems
+  4B: Physiological Devices
+
+extracorporeall_or_systemic_assistance_and_performance:
+  5A: Physiological Systems
+
+extracorporeal_or_systemic_therapies:
+  6A: Physiological Systems
+
+image_types:
+  0: Plain Radiography
+  1: Fluoroscopy
+  2: Computerized Tomography (CT Scan)
+  3: Magnetic Resonance Imaging (MRI)
+  4: Ultrasonography
+
+body_parts:
+  7: Fetal Umbilical Cord
+  8: Placenta
+  9: First Trimester, Single Fetus
+  B: First Trimester, Multiple Gestation
+  C: Second Trimester, Single Fetus
+  D: Second Trimester, Multiple Gestation
+  F: Third Trimester, Single Fetus
+  G: Third Trimester, Multiple Gestation
+
+imaging:
+  body_systems:
+    0:
+      title: Central Nervous System
+      image_types: [0, 1, 2, 3, 4]
+    2:
+      title: Heart
+      image_types: [0, 1, 2, 3, 4]
+    3:
+      title: Upper Arteries
+      image_types: [0, 1, 2, 3, 4]
+    4:
+      title: Lower Arteries
+      image_types: [0, 1, 2, 3, 4]
+    5:
+      title: Veins
+      image_types: [0, 1, 2, 3, 4]
+    7:
+      title: Lymphatic System
+      image_types: [0]
+    8:
+      title: Eye
+      image_types: [0, 2, 3, 4]
+    9:
+      title: Ear, Nose, Mouth and Throat
+      image_types: [0, 1, 2, 3]
+    B:
+      title: Respiratory System
+      image_types: [0, 1, 2, 3, 4]
+    D:
+      title: Gastrointestinal System
+      image_types: [1, 2, 4]
+    F:
+      title: Hepatobiliary System and Pancreas
+      image_types: [0, 1, 2, 3, 4]
+    G:
+      title: Endocrine System
+      image_types: [2, 3, 4]
+    H:
+      title: Skin, Subcutaneous Tissue and Breast
+      image_types: [0, 3, 4]
+    L:
+      title: Connective Tissue
+      image_types: [3, 4]
+    N:
+      title: Skull and Facial Bones
+      image_types: [0, 1, 2, 3]
+    P:
+      title: Non-Axial Upper Bones
+      image_types: [0, 1, 2, 3, 4]
+    Q:
+      title: Non-Axial Lower Bones
+      image_types: [0, 1, 2, 3, 4]
+    R:
+      title: Axial Skeleton, Except Skull and Facial Bones
+      image_types: [0, 1, 2, 3, 4]
+    T:
+      title: Urinary System
+      image_types: [0, 1, 2, 3, 4]
+    U:
+      title: Female Reproductive System
+      image_types: [0, 1, 3, 4]
+    V:
+      title: Male Reproductive System
+      image_types: [0, 1, 2, 3, 4]
+    W:
+      title: Anatomical Regions
+      image_types: [0, 1, 2, 3, 4]
+    Y:
+      title: Fetus and Obstetrical
+      3:
+        body_parts:
+          0: Fetal Head
+          1: Fetal Heart
+          2: Fetal Thorax
+          3: Fetal Abdomen
+          4: Fetal Spine
+          5: Fetal Extremities
+          6: Whole Fetus
+        contrast:
+          Y:
+            title: Other Contrast
+            qualifier1:
+              0: Unenhanced and Enhanced
+              Z: None
+            qualifier2:
+              Z: None
+          Z:
+            title: None
+            qualifier1:
+              Z: None
+            qualifier2:
+              Z: None
+
+      4:
+        body_parts:
+          7: Fetal Umbilical Cord
+          8: Placenta
+          9: First Trimester, Single Fetus
+          B: First Trimester, Multiple Gestation
+          C: Second Trimester, Single Fetus
+          D: Second Trimester, Multiple Gestation
+          F: Third Trimester, Single Fetus
+          G: Third Trimester, Multiple Gestation
+        contrast:
+          Z: None
+        quantifier1:
+          Z: None
+        qualifier2:
+          Z: None
+
+  scan_types:
+    0: Plain Radiography
+    1: Fluoroscopy
+    2: Computerized Tomography (CT Scan)
+    3: Magnetic Resonance Imaging (MRI)
+    4: Ultrasonography
+
+  contrast_types:
+    0: High Osmolar
+    1: Low Osmolar
+    Y: Other Contrast
+    Z: None
+
+  W2: 4
+  W0: 3
+  default: Z Z Z
